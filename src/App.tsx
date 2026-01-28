@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import AbsenceTable from './components/AbsenceTable/AbsenceTable';
-import EmployeeModal from './components/EmployeeModal/EmployeeModal';
+import AbsenceTable from '../src/components/AbsenceTable/AbsenceTable';
+import EmployeeModal from '../src/components/EmployeeModal/EmployeeModal';
 import LoadingSpinner from './components/LoadingSpinner';
 import ErrorDisplay from './components/ErrorDisplay';
 import DashboardStats from './components/DashboardStats/DashboardStats';
