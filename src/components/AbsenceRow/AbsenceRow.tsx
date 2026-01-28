@@ -1,6 +1,6 @@
 import React from 'react';
-import { useConflicts } from '../hooks/useConflicts';
-import { formatDate, calculateEndDate } from '../utils/dateUtils';
+import { useConflicts } from '../../hooks/useConflicts';
+import { formatDate, calculateEndDate } from '../../utils/dateUtils';
 import { AbsenceRowProps } from './AbsenceRow.types';
 
 const AbsenceRow: React.FC<AbsenceRowProps> = ({ absence, onEmployeeClick }) => {

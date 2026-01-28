@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
-import { SortConfig, SortField } from '../utils/sortUtils.types';
-import { sortAbsences } from '../utils/sortUtils';
-import AbsenceRow from './AbsenceRow';
+import { SortConfig, SortField } from '../../utils/sortUtils.types';
+import { sortAbsences } from '../../utils/sortUtils';
+import AbsenceRow from '../AbsenceRow/AbsenceRow';
 import { AbsenceTableProps } from './AbsenceTable.types';
 
 const AbsenceTable: React.FC<AbsenceTableProps> = ({ data, onEmployeeSelect }) => {

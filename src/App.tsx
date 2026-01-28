@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import AbsenceTable from './components/AbsenceTable';
-import DashboardStats from './components/DashboardStats';
+import AbsenceTable from './components/AbsenceTable/AbsenceTable';
+import EmployeeModal from './components/EmployeeModal/EmployeeModal';
+import LoadingSpinner from './components/LoadingSpinner';
+import ErrorDisplay from './components/ErrorDisplay';
+import DashboardStats from './components/DashboardStats/DashboardStats';
 import { useAbsences } from './hooks/useAbsences';
 
 const App: React.FC = () => {
@@ -27,7 +30,9 @@ const App: React.FC = () => {
       </header>
 
       <main className="max-w-7xl mx-auto">
+        {loading && <LoadingSpinner />}
         
+        {error && <ErrorDisplay message={error} />}
         
         {!loading && !error && (
           <>
@@ -40,7 +45,12 @@ const App: React.FC = () => {
         )}
       </main>
 
-     
+      <EmployeeModal
+        isOpen={!!selectedEmployeeId}
+        onClose={handleCloseModal}
+        employeeId={selectedEmployeeId}
+        allAbsences={absences}
+      />
     </div>
   );
 };
