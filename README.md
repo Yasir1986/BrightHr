@@ -14,6 +14,8 @@ npm install
 npm run dev
 The application will open at http://localhost:5173/
 
+or LIVE NETLIFY DEPLOY LINK: https://subtle-mermaid-18c1b3.netlify.app/
+
 Running Tests
 # Run all tests
 npm test
