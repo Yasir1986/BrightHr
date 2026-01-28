@@ -4,11 +4,7 @@ export interface Employee {
   lastName: string;
 }
 
-export enum AbsenceType {
-  SICKNESS = 'SICKNESS',
-  ANNUAL_LEAVE = 'ANNUAL_LEAVE',
-  MEDICAL = 'MEDICAL',
-}
+export type AbsenceType = 'SICKNESS' | 'ANNUAL_LEAVE' | 'MEDICAL';
 
 export interface Absence {
   id: number;
