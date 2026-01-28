@@ -1,73 +1,41 @@
-# React + TypeScript + Vite
+Getting Started:-
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Prerequisites:
+Node.js 16+
+npm 10+
+ 
+# Installation
+Clone the repository:
+git clone https://github.com/Yasir1986/BrightHr.git
+cd BrightHR
+npm install
 
-Currently, two official plugins are available:
+# Start the development server:
+npm run dev
+The application will open at http://localhost:5173/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Running Tests
+# Run all tests
+npm test
 
-## React Compiler
+# Run tests in watch mode
+npm test -- --watch
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Run tests with coverage report
+npm test -- --coverage
 
-## Expanding the ESLint configuration
+# Run specific test files
+npm test -- src/components/AbsenceRow/AbsenceRow.test.tsx
+Building for Production
+npm run build
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Areas for Further Improvement
+1. Enhanced Filtering & Search (Implement a comprehensive filtering system)
+2. Real-time Updates (Implement WebSocket connections for live updates)
+3. Export & Reporting (Add data export functionality)
+4. Accessibility Enhancements (Comprehensive accessibility audit and improvements)
+5. Performance Optimizations (Implement virtualization, code splitting, and caching)
+6. Advanced Analytics Dashboard ( Add comprehensive analytics and visualization)
+7. Component Tests: (95%+ coverage for all components)
