@@ -23,9 +23,6 @@ npm test
 # Run tests in watch mode
 npm test -- --watch
 
-# Run tests with coverage report
-npm test -- --coverage
-
 # Run specific test files
 npm test -- src/components/AbsenceRow/AbsenceRow.test.tsx
 Building for Production
