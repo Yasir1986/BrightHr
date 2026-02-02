@@ -20,9 +20,6 @@ Running Tests
 # Run all tests
 npm test
 
-# Run tests in watch mode
-npm test -- --watch
-
 # Run specific test files
 npm test -- src/components/AbsenceRow/AbsenceRow.test.tsx
 Building for Production
