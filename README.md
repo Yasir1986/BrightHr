@@ -26,7 +26,6 @@ Building for Production
 npm run build
 
 
-
 # Areas for Further Improvement
 1. Enhanced Filtering & Search (Implement a comprehensive filtering system)
 2. Real-time Updates (Implement WebSocket connections for live updates)
